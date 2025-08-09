@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Jamwal - Freelance Fullstack Developer</title>
+    <meta name="description" content="Freelance Fullstack Developer specializing in Node.js, Express.js, MongoDB, React, and TailwindCSS. Building fast, scalable web solutions.">
+    <meta name="keywords" content="fullstack developer, node.js, react, mongodb, express.js, web development, freelancer">
+    <meta name="author" content="Amit Jamwal">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Amit Jamwal - Freelance Fullstack Developer">
+    <meta property="og:description" content="Building fast, scalable web solutions with modern technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amitjamwal.dev">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/96/000000/developer.png"/>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo" onclick="scrollToTop()">Amit Jamwal</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container container">
+            <div class="hero-content">
+                <h1>Hi, I'm<br>Amit Jamwal</h1>
+                <p>Freelance Fullstack Developer specializing in Node.js, Express.js, MongoDB, React, and TailwindCSS. I build fast, scalable web solutions that drive business growth.</p>
+                <a href="#contact" class="cta-button">
+                    <span>Work With Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-image">
+                <div class="avatar">
+                    <img src="assets/profileImage.png" alt="Amit Jamwal" class="avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div style="display: none; align-items: center; justify-content: center; width: 100%; height: 100%; background: var(--light); border-radius: 50%; font-size: 4rem; color: var(--primary);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate fullstack developer with 3+ years of experience architecting and delivering robust web applications. I specialize in crafting RESTful APIs using Node.js, Express.js, and MongoDB, while building dynamic, responsive frontends with React and modern CSS frameworks. My focus is on creating scalable solutions that prioritize performance, SEO, accessibility, and seamless user experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon nodejs">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Server-side JavaScript runtime for building scalable, high-performance applications</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon express">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Express.js</h3>
+                    <p>Fast, minimalist web framework for Node.js applications and RESTful APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon mongodb">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database for modern, flexible data storage and management</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon react">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Component-based library for building interactive and dynamic user interfaces</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon vite">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Vite</h3>
+                    <p>Lightning-fast build tool and development server for modern web apps</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon javascript">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Modern ES6+ JavaScript for full-stack web development and beyond</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon wordpress">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress</h3>
+                    <p>Content management system and custom theme/plugin development</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon mysql">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <p>Robust relational database management system for data-driven applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management tool with real-time updates, team features, and progress tracking.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Blog Platform</h3>
+                        <p>Modern blog platform with rich text editor, content management system, and SEO optimization.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">Markdown</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Complete web applications from concept to deployment using modern technologies and best practices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, responsive websites that work perfectly across all devices and screen sizes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Search engine optimization to improve your website's visibility and organic traffic.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>RESTful API design and development for scalable backend services and integrations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress Development</h3>
+                    <p>Custom WordPress themes, plugins, and website maintenance for content-driven sites.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing support, updates, and maintenance to keep your website secure and performant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to start your next project? Let's discuss how I can help bring your ideas to life.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:amit.jamwal005@gmail.com">
+                            <span>amit.jamwal005@gmail.com</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item whatsapp-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/919882388846?text=Hi%20Amit,%20I'm%20interested%20in%20your%20services" target="_blank">
+                            <span>Message on WhatsApp</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mandi, Himachal Pradesh, India</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Project discussion, quote request, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your project requirements, timeline, and any specific details..."></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/amitjamwal05" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amit-jamwal-5aa813139/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/Amitjamwal_05" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Amit Jamwal - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
